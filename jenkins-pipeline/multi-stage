@@ -1,0 +1,31 @@
+pipeline {
+	agent none
+	stages {
+		stage('backend') {
+			agent {
+				docker {image 'node:latest'}
+			}
+			steps {
+				echo "backend being made ."
+				echo "backend being made .."
+				echo "backend being made ..."
+				echo "backend being made ...."
+				echo "backend being made ....."
+				sh 'npm --version'
+			}
+		
+		stage('db') {
+			agent {
+				docker {image 'mysql:latest'}
+			}
+			steps {
+				echo "db being made ."
+				echo "db being made .."
+				echo "db being made ..."
+				echo "db being made ...."
+				echo "db being made ....."
+				sh 'mysql --version'
+			}
+		}
+	}
+}
