@@ -12,6 +12,7 @@ pipeline {
 		stage('test-2') {
 			steps {
 				echo "You've reached stage=test-2 Hello There!"
+				sh 'java --version'
 			}
 		}
 	}
