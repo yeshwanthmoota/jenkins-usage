@@ -5,10 +5,10 @@ pipeline {
 	
 	stages {
 		stage('test-1') {
-			echo "You've reached stage=test-1 everything works fine!"
+			steps echo "You've reached stage=test-1 everything works fine!"
 		}
 		stage('test-2') {
-			echo "You've reached stage=test-2 Hello There!"
+			steps echo "You've reached stage=test-2 Hello There!"
 		}
 	}
 }
