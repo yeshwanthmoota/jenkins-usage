@@ -13,6 +13,7 @@ pipeline {
 				echo "backend being made ....."
 				sh 'npm --version'
 			}
+		}
 		
 		stage('db') {
 			agent {
